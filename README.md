@@ -18,7 +18,7 @@ Basketball is one of the popular sports in North America and has a lot of data r
     - Analysis of team key matchups
     - Calculations of ELO rating
 
-2.   Machine learning 
+2. Machine learning 
     - Create a prediction model for key team matchups
 
 <img src='https://user-images.githubusercontent.com/85041697/159171394-7c7942bb-1fa4-4f02-a531-e75672845233.jpg' height=300 width=500>
