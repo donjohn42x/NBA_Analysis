@@ -1,7 +1,5 @@
 # Analysis of seasonal game data of the National Basketball Association teams and leveraging data to predict match outcomes
 
-<img src='https://user-images.githubusercontent.com/85041697/159171394-7c7942bb-1fa4-4f02-a531-e75672845233.jpg' height=300>
-
 ## Overview of the project
 Historical game data has become a pivotal component to analyze individual and team performance. 	Analyzing data has become an industry standard to improve working conventions and realize key business objectives. 
 
@@ -23,7 +21,7 @@ Basketball is one of the popular sports in North America and has a lot of data r
 2.   Machine learning 
     - Create a prediction model for key team matchups
 
-
+<img src='https://user-images.githubusercontent.com/85041697/159171394-7c7942bb-1fa4-4f02-a531-e75672845233.jpg' height=300 width=500>
 
 
 
