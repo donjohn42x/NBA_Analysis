@@ -10,6 +10,8 @@ Basketball is one of the popular sports in North America and has a lot of data r
 - [nba_players_2021-22.csv](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch/data/nba_players_2021-22.csv): National Basketball Association 2021 - 2022 players data 
 - [nba_teams_2021-22.csv](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch/data/nba_teams_2021-22.csv) - National Basketball Association 2021 - 2022 teams data
 
+All the data sources are scraped from https://www.nba.com/stats/
+
 ## Key Objectives
 1. Data Exploration & Visualization
     - Analysis of seasonal team data
