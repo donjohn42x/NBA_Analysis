@@ -6,10 +6,9 @@ Historical game data has become a pivotal component to analyze individual and te
 Basketball is one of the popular sports in North America and has a lot of data readily accessible for the public to see and use. This project will analyze the National Basketball Association seasonal game data and create a model that predicts which team will win in a given matchup. 
 
 ## Data Resources
-- games.csv: National Basketball Association 2021 - 2022 seasonal game data
-- games_details.csv: National Basketball Association 2021 - 2022 game matchup data (https://www.basketball-reference.com/leagues/NBA_2022_games.html)
-- players.csv: National Basketball Association 2021 - 2022 players data (https://www.basketball-reference.com/leagues/NBA_2022_per_game.html)
-- teams.csv (https://www.basketball-reference.com/teams/)
+- [nba_game_details_2021-22.csv](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch/data/nba_game_details_2021-22.csv): National Basketball Association 2021 - 2022 game matchup data 
+- [nba_players_2021-22.csv](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch/data/nba_players_2021-22.csv): National Basketball Association 2021 - 2022 players data 
+- [nba_teams_2021-22.csv](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch/data/nba_teams_2021-22.csv) - National Basketball Association 2021 - 2022 teams data
 
 ## Key Objectives
 1. Data Exploration & Visualization
