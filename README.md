@@ -1,5 +1,5 @@
 # NBA_Analysis
-Shared Repository for Capstone Project
+Notes for database setup
 
 Data files retrieved from:
 https://www.kaggle.com/nathanlauga/nba-games
