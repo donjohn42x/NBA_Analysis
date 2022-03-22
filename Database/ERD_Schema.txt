@@ -1,0 +1,72 @@
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+players
+-
+PLAYER_ID PK int FK >- games_details.PLAYER_ID
+PLAYER_NAME varchar
+SEASON PK year
+TEAM_ID int
+
+games
+-
+GAME_DATE_EST date
+GAME_ID int PK FK >- games_details.GAME_ID
+HOME_TEAM_ID int
+VISITOR_TEAM_ID int
+SEASON year
+PTS_home int
+FG_PCT_home float
+FT_PCT_home float
+AST_home int
+REB_home int
+PTS_away int
+FG_PCT_away float
+FT_PCT_away float
+AST_away int
+REB_away int
+HOME_TEAM_WINS int
+
+games_details
+-
+GAME_ID PK int
+TEAM_ID int
+PLAYER_ID int
+PLAYER_NAME varchar
+START_POSITION varchar
+PTS int
+REB int
+OREB int
+DREB int
+AST int
+STL int
+BLK int
+FG_PCT float
+FG3_PCT float
+MIN time
+
+teams
+-
+TEAM_ID int PK FK >- games_details.TEAM_ID
+MIN_YEAR year
+MAX_YEAR year
+NICKNAME varchar
+CITY varchar
+ARENA varchar
+ARENACAPACITY int
+OWNER varchar
+HEADCOACH varchar
+
+ranking
+-
+TEAM_ID int PK FK >- teams.TEAM_ID
+SEASON_ID int PK
+CONFERENCE varchar
+G int
+W int
+L int
+W_PCT float
+HOME_RECORD varchar
+ROAD_RECORD varchar
+
