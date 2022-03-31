@@ -1,8 +1,30 @@
 
-# Model Training
+# Import our dependencies(not sure about these yet)
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
+from math import exp
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+import tensorflow as tf
+import os
 
-final_team_stats = pd.read_csv('Our dataframe here', index_col = 0)
+from sklearn.linear_model import LogisticRegression 
+from sklearn import metrics
+
+
+# Download the dataset
+# Source of dataset - 
+
+# Load the data
+data = pd.read_csv("data.csv")
+data.head()
+
+
+# Model Training
+# from sklearn.model_selection import train_test_split
+
+final_team_stats = pd.read_csv('data.csv', index_col = 0)
 
 cols = [relevant coloums listed 1,2,3, etc.]
 final_team_stats.drop(final_team_stats.columns[cols],axis=1, inplace=True)
@@ -14,16 +36,9 @@ x_train, x_test, y_train, y_test = train_test_split(features, label, test_size =
 
 
 
-# Import our dependencies(not sure about these yet)
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler,OneHotEncoder
-import pandas as pd
-import tensorflow as tf
-import os
 
 
-from sklearn.linear_model import LogisticRegression 
-from sklearn import metrics
+
 
 # create a simple, non-parameterized Logistic Regression model
 model = LogisticRegression(random_state=42)
