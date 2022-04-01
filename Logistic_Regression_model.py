@@ -12,6 +12,7 @@ import os
 from sklearn.linear_model import LogisticRegression 
 from sklearn import metrics
 
+# .predict_proba
 
 # Download the dataset
 # Source of dataset - 
