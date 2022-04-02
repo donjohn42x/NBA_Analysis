@@ -14,7 +14,10 @@
 
 - Initially we tried to use a nerual network model [link to nn ipynb] to parse the data however we were unsatisified with the results of the accuracy, *NN accuracy numbers* . Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
 - After talking with the instructors for some guidance we decided to go with two simplier models in an attempt to increase the accuracy, that is how we decided to use a Logistic Regresion model as well as a RandomForest model. 
-- Some problems we ran into with using the Logistic Regression model: 
+- Problems we encountered with the Logistic Regression model: 
+    - 
+- Problems we encountered with the RandomForest model:
+    - 
 # Database
 
 # Dashboard
