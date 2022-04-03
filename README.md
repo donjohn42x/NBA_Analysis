@@ -66,7 +66,7 @@ The data will be pre-processed to create a feature for identifying whether the t
 - Problems we encountered with the Logistic Regression model: 
     - The main issues we ran into with the use of the Logistic Regression model was with choosing the correct variables to use. We had to go through much trial and error to get to the correct variables to use in the model as many of the categories are closesly correlated with each other, thus meaning it was bad for the model. The more things we tried to add the more problems we had so we used our heatmap to find the correct variables to use in our analysis. 
 - Problems we encountered with the RandomForest model:
-    - This is a relatively simple model unfortunetally, it does not take into account previous history. The accuracy of the RandomForest model, although better, is not well trained. We can enrich the model with additional features such as previous season's data, the opposite approach to the Logistic Regression model. 
+    - This is a relatively simple model unfortunetally, it does not take into account previous history. The accuracy of the RandomForest model, although better, is not well trained. We can enrich the model with additional features such as previous season's data as well as additional variables, the opposite approach to the Logistic Regression model. 
  
 ### Features (variables used to make a prediction): 
 - Target (predicted outcome): HOME_TEAM_WINS (Games.csv)
