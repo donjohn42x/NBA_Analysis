@@ -80,12 +80,15 @@ The data will be pre-processed to create a feature for identifying whether the t
 - from skl
 
 ## Dashboard Design
-This is the webpage wireframe for the presentation of the project:
-
+### This is the webpage wireframe for the dashboard:
 ![dashboard_design.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/dashboard_design.png)
 
-The primary feature will be to create a "Game Win Predictor" interface that will allow a user to input a home team and away team for the machine learning model to output a winner of the matchup.
+### Tools Used to Create the Final Dashboard
+1. Figma.com - a free web-based application that allows users to create a website design with built-in templates and plug-ins. We used Figma to create the wireframe.
+2. Pxcode.io - a free web-based appliation that allows users to create an HTML file from the figma wireframe.
+3. HTML - The front-end programing language that will be used to create  the webpage
 
-Layered in this design will also have a presentation of the EDA visualizations as well as a description of the machine learning model selected.
-
-A possible future implementation is to create a button that will scrape more recent NBA data for the model as the current database is static.
+### Decription of the Interactive Elements
+- The primary feature will be to create a "Game Win Predictor" interface that will allow a user to input a home team and away team for the machine learning model to output a winner of the matchup.
+- Layered in this design will also have a presentation of the EDA visualizations as well as a description of the machine learning model selected.
+- A possible future implementation is to create a button that will scrape more recent NBA data for the model as the current database is static.
