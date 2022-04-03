@@ -32,3 +32,18 @@ All the data sources are from [Kaggle](https://www.kaggle.com/datasets/nathanlau
 
 Using the data we gathered through this project we hope to create a working model to predict game-to-game outcomes of matchups between teams throughout the season. The team has a graet interest in the NBA in general so when we came up with this topic there we came to a unanimous decision to go ahead with it. 
 
+## Machine Learning Model Overview:
+- Supervised Learning – Since we are dealing with labeled data.
+- Classification – Since we are dealing with Discrete Outcomes e.g. WIN/LOSS.
+- Logistic Regression – Since we are predicting binary outcomes i.e. WIN/LOSS
+ 
+### Features (variables used to make a prediction): 
+- Target (predicted outcome): HOME_TEAM_WINS (Games.csv)
+- Dependencies (PENDING):
+- import matplotlib.pyplot as plt
+- import pandas as pd
+- import numpy as np
+- from sklearn.model_selection import train_test_split
+- from imblearn.ensemble import BalancedRandomForestClassifier
+- from sklearn.metrics import balanced_accuracy_score
+- from skl
