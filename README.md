@@ -61,7 +61,7 @@ The data will be pre-processed to create a feature for identifying whether the t
 - (Leaving space for team to add more details)
 
 ### Model Evaluation
-- Initially we tried to use a neural network model [link to nn ipynb] to parse the data however we were unsatisified with the results of the accuracy, *NN accuracy numbers* . Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
+- Initially we tried to use a [neural network model](https://github.com/donjohn42x/NBA_Analysis/blob/main/nba_analysis_NN.ipynb)] to parse the data however we were unsatisified with the results of the accuracy, *NN accuracy numbers* . Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
 - After talking with the instructors for some guidance we decided to go with two simpler models in an attempt to increase the accuracy, that is how we decided to use a Logistic Regresion model as well as a RandomForest model. 
 - Problems we encountered with the Logistic Regression model: 
     - The main issues we ran into with the use of the Logistic Regression model was with choosing the correct variables to use. We had to go through much trial and error to get to the correct variables to use in the model as many of the categories are closesly correlated with each other, thus meaning it was bad for the model. The more things we tried to add the more problems we had so we used our heatmap to find the correct variables to use in our analysis. 
