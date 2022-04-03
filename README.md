@@ -1,41 +1,72 @@
 ## Overview of the project
-Historical game data has become a pivotal component to analyze individual and team performance. 	Analyzing data has become an industry standard to improve working conventions and realize key business objectives. 
+Historical game data has become a pivotal component to analyze individual and team performance. Analyzing data has become an industry standard to improve working conventions and realize key business objectives. 
 
 Basketball is one of the popular sports in North America and has a lot of data readily accessible for the public to see and use. This project will analyze the National Basketball Association seasonal game data and create a model that predicts which team will win in a given matchup. 
 
-## Data Resources
-- games.csv (Game results showing totals for both home and away teams on points, field goal percentage, assists, and rebounds)
-- games_details.csv (Individual player stats by game. Includes points, field goal attempts, percentages, rebounds, assists, blocks, plus-minus etc.)
-- players.csv (players details)
-- ranking.csv (ranking of NBA given a day and season split into west and east on CONFERENCE column)
-- teams.csv (Information about city, arena capacity, coaches, owners, years of operation)
+Using the data we gathered through this project we hope to create a working model to predict game-to-game outcomes of matchups between teams throughout the season. The team has a great interest in the NBA in general so when we came up with this topic there we came to a unanimous decision to go ahead with it. 
 
-Note: games_details.csv would need to be cleaned to assign each unique PLAYER_ID a numeric value across all of their games played, factoring in their total points, assists, rebounds, blocks etc.
-
-Cleaned data table ("power_rankings_df") to be exported and stored on AWS S3 for shared team access.
-
-All the data sources are from [Kaggle](https://www.kaggle.com/datasets/nathanlauga/nba-games)
-
-## Key Objectives
+### Key Objectives
 1. Data Exploration & Visualization
     - Analysis of seasonal team data
     - Analysis of individual player data
     - Analysis of team key matchups
-    - Calculations of ELO rating
 
 2. Machine learning 
     - Create a prediction model for key team matchups
 
 <img src='https://user-images.githubusercontent.com/85041697/159171394-7c7942bb-1fa4-4f02-a531-e75672845233.jpg' height=300 width=500>
 
-## Outcomes
+## Database
+### Data Retrieval
+NBA game data was retrieved using a [python script for the NBA.com API](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch2/nba_api_scrape.ipynb). Multiple DataFrames were created to contain information on game records, individual player stats, and team details. These data files were exported into CSV files for our analysis.
 
-Using the data we gathered through this project we hope to create a working model to predict game-to-game outcomes of matchups between teams throughout the season. The team has a graet interest in the NBA in general so when we came up with this topic there we came to a unanimous decision to go ahead with it. 
+- games.csv (Game results showing totals for both home and away teams on points, field goal percentage, assists, and rebounds)
+- games_details.csv (Individual player stats by game. Includes points, field goal attempts, percentages, rebounds, assists, blocks, plus-minus etc.)
+- players.csv (players details)
+- teams.csv (Information about city, arena capacity, coaches, owners, years of operation)
 
-## Machine Learning Model Overview:
+![ERD_Diagram.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/ERD_Diagram.png)
+
+### Database Storage
+The postgresSQL database is being hosted on a public AWS RDS for shared team access, and to be connected the machine learning model in python. [Script](https://github.com/donjohn42x/NBA_Analysis/blob/tomoka_branch2/Database/connect_database.ipynb)
+
+![aws_sql_connection.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/aws_sql_connection.png)
+
+The script utilizes SQLAlchemy language to query and join the tables.
+
+![sqlalchemy_join.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/sqlalchemy_join.png)
+
+## Exploratory Analysis
+To help identify the most important features, and possibly noisy variables, in relation to predicting win/loss outcomes from the data set, a python script was written to plot a [correlation matrix heat map](https://github.com/donjohn42x/NBA_Analysis/blob/main/CorrelationMatrix.ipynb) for our games data set.
+
+Based on the below results, we will target our machine learning model to feature the following stats due to the strength of their correlation to WINS:
+- Field goals attempted (FGA)
+- Field goal percentage (FG_PCT)
+- Three-point percentage (FG3_PCT)
+- Rebounds (REB)
+- Assists (AST)
+
+![corr_matrix.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/corr_matrix.png)
+
+## Machine Learning Model Overview
+For the machine learning model selection, our project will be dealing with the following two assumptions:
 - Supervised Learning – Since we are dealing with labeled data.
-- Classification – Since we are dealing with Discrete Outcomes e.g. WIN/LOSS.
-- Logistic Regression – Since we are predicting binary outcomes i.e. WIN/LOSS
+- Classification – Since we are dealing with Discrete Outcomes e.g. WIN/LOSS
+
+We will be looking to implement a Logistic Regression model as we are looking for a classification between 0 (loss) and 1 (win).
+
+### Preprocessing
+The data will be pre-processed to create a feature for identifying whether the team played at home or away, as our EDA suggested there may be a relationship of the home team being more likely to win a game. The other numerical features were selected based on the correlation matrix and stored in the "needed_features" variable.
+
+- (Leaving space for team to add more details)
+
+### Model Evaluation
+- Initially we tried to use a neural network model [link to nn ipynb] to parse the data however we were unsatisified with the results of the accuracy, *NN accuracy numbers* . Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
+- After talking with the instructors for some guidance we decided to go with two simpler models in an attempt to increase the accuracy, that is how we decided to use a Logistic Regresion model as well as a RandomForest model. 
+- Problems we encountered with the Logistic Regression model: 
+    - 
+- Problems we encountered with the RandomForest model:
+    - 
  
 ### Features (variables used to make a prediction): 
 - Target (predicted outcome): HOME_TEAM_WINS (Games.csv)
@@ -47,3 +78,14 @@ Using the data we gathered through this project we hope to create a working mode
 - from imblearn.ensemble import BalancedRandomForestClassifier
 - from sklearn.metrics import balanced_accuracy_score
 - from skl
+
+## Dashboard Design
+This is the webpage wireframe for the presentation of the project:
+
+![dashboard_design.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/dashboard_design.png)
+
+The primary feature will be to create a "Game Win Predictor" interface that will allow a user to input a home team and away team for the machine learning model to output a winner of the matchup.
+
+Layered in this design will also have a presentation of the EDA visualizations as well as a description of the machine learning model selected.
+
+A possible future implementation is to create a button that will scrape more recent NBA data for the model as the current database is static.
