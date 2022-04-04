@@ -58,7 +58,7 @@ We will be looking to implement a Logistic Regression model as we are looking fo
 ### Preprocessing
 The data will be pre-processed to create a feature for identifying whether the team played at home or away, as our EDA suggested there may be a relationship of the home team being more likely to win a game. The other numerical features were selected based on the correlation matrix and stored in the "needed_features" variable.
 
-- (Leaving space for team to add more details)
+The [model](https://github.com/donjohn42x/NBA_Analysis/blob/main/nba_analysis.ipynb) was trained using DataFrames that took the average value of the key features over each respective teams' last ten games and using the "WIN" column as the output variable.
 
 ### Model Evaluation
 - Initially we tried to use a [neural network model](https://github.com/donjohn42x/NBA_Analysis/blob/main/nba_analysis_NN.ipynb) to parse the data however we were unsatisified with the results of the accuracy. Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
