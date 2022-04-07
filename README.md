@@ -48,6 +48,10 @@ Based on the below results, we will target our machine learning model to feature
 
 ![corr_matrix.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/corr_matrix.png)
 
+Additional EDA was conducted to review if the home team had an advantage to win the game. The following diagram displays the difference in average team wins (1=win 0=loss) per year. Note: during the Covid-19 pandemic, the home team advantage was reduced, perhaps due to their being no crows in attendence.
+
+![home_away](https://github.com/donjohn42x/NBA_Analysis/blob/249e014ce5be462a6685daedc3fffafce8d74a7c/Resources/README_images/Home%20vs%20Away.jpg)
+
 ## Machine Learning Model Overview
 For the machine learning model selection, our project will be dealing with the following two assumptions:
 - Supervised Learning – Since we are dealing with labeled data.
