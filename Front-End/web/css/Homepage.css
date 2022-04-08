@@ -1,0 +1,298 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+.homepage-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+
+.homepage-flex {
+  display: flex;
+  flex-direction: column; }
+
+.homepage-block3 {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center top;
+  object-position: center top; }
+
+.homepage-block3.layout {
+  position: relative;
+  width: calc(100% - 10px);
+  margin: 0px 0px 0px 10px; }
+  @media (max-width: 1199px) {
+    .homepage-block3.layout {
+      width: calc(100% - 9px);
+      margin: 0px 0px 0px 9px; } }
+  @media (max-width: 991px) {
+    .homepage-block3.layout {
+      width: calc(100% - 7px);
+      margin: 0px 0px 0px 7px; } }
+  @media (max-width: 767px) {
+    .homepage-block3.layout {
+      width: calc(100% - 6px);
+      margin: 0px 0px 0px 6px; } }
+  @media (max-width: 479px) {
+    .homepage-block3.layout {
+      width: calc(100% - 5px);
+      margin: 0px 0px 0px 5px; } }
+
+.homepage-hero-title3 {
+  display: flex;
+  justify-content: flex-end;
+  font: 700 48px/1 "Inter", Helvetica, Arial, serif;
+  color: #667080;
+  text-align: right;
+  letter-spacing: -0.96px; }
+  @media (max-width: 1199px) {
+    .homepage-hero-title3 {
+      font-size: 43px;
+      text-align: right; } }
+  @media (max-width: 991px) {
+    .homepage-hero-title3 {
+      font-size: 37px; } }
+  @media (max-width: 767px) {
+    .homepage-hero-title3 {
+      font-size: 32px; } }
+  @media (max-width: 575px) {
+    .homepage-hero-title3 {
+      font-size: 30px; } }
+  @media (max-width: 479px) {
+    .homepage-hero-title3 {
+      font-size: 27px; } }
+  @media (max-width: 383px) {
+    .homepage-hero-title3 {
+      font-size: 25px; } }
+
+.homepage-hero-title3.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 64.33%;
+  margin: 52px auto 0px; }
+  @media (max-width: 1199px) {
+    .homepage-hero-title3.layout {
+      margin: 44px auto 0px; } }
+  @media (max-width: 991px) {
+    .homepage-hero-title3.layout {
+      width: 70.62%;
+      margin: 36px auto 0px; } }
+  @media (max-width: 767px) {
+    .homepage-hero-title3.layout {
+      width: 76.22%;
+      margin: 29px auto 0px; } }
+  @media (max-width: 575px) {
+    .homepage-hero-title3.layout {
+      width: 81.03%;
+      margin: 25px auto 0px; } }
+  @media (max-width: 479px) {
+    .homepage-hero-title3.layout {
+      width: 85.07%;
+      margin: 22px auto 0px; } }
+  @media (max-width: 383px) {
+    .homepage-hero-title3.layout {
+      width: 88.37%;
+      margin: 20px auto 0px; } }
+
+.homepage-block2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #2e5a9f;
+  border-radius: 6px 6px 6px 6px; }
+
+.homepage-block2.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 31.36%;
+  margin: 66px auto 0px; }
+  @media (max-width: 1199px) {
+    .homepage-block2.layout {
+      margin: 57px auto 0px; } }
+  @media (max-width: 991px) {
+    .homepage-block2.layout {
+      margin: 47px auto 0px; } }
+  @media (max-width: 767px) {
+    .homepage-block2.layout {
+      margin: 38px auto 0px; } }
+  @media (max-width: 575px) {
+    .homepage-block2.layout {
+      margin: 33px auto 0px; } }
+  @media (max-width: 479px) {
+    .homepage-block2.layout {
+      width: 37.86%;
+      margin: 29px auto 0px; } }
+  @media (max-width: 383px) {
+    .homepage-block2.layout {
+      width: 44.83%;
+      margin: 26px auto 0px; } }
+
+.homepage-highlights {
+  display: flex;
+  justify-content: flex-end;
+  font: 700 16px/1.37 "Inter", Helvetica, Arial, serif;
+  color: white;
+  text-align: right;
+  letter-spacing: -0.32px; }
+  @media (max-width: 1199px) {
+    .homepage-highlights {
+      font-size: 15px;
+      text-align: right; } }
+  @media (max-width: 991px) {
+    .homepage-highlights {
+      font-size: 14px; } }
+  @media (max-width: 767px) {
+    .homepage-highlights {
+      font-size: 13px; } }
+  @media (max-width: 479px) {
+    .homepage-highlights {
+      font-size: 12px; } }
+
+.homepage-highlights.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 37.06%;
+  margin: 35px auto 34px; }
+  @media (max-width: 1199px) {
+    .homepage-highlights.layout {
+      margin: 30px auto; } }
+  @media (max-width: 991px) {
+    .homepage-highlights.layout {
+      margin: 26px auto 25px; } }
+  @media (max-width: 767px) {
+    .homepage-highlights.layout {
+      margin: 21px auto; } }
+  @media (max-width: 575px) {
+    .homepage-highlights.layout {
+      margin: 19px auto; } }
+  @media (max-width: 479px) {
+    .homepage-highlights.layout {
+      margin: 17px auto; } }
+  @media (max-width: 383px) {
+    .homepage-highlights.layout {
+      margin: 16px auto 15px; } }
+
+.homepage-block11 {
+  display: flex;
+  flex-direction: column;
+  background-color: #667080;
+  border-radius: 6px 6px 6px 6px; }
+
+.homepage-block11.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 31.36%;
+  margin: 66px auto 0px; }
+  @media (max-width: 1199px) {
+    .homepage-block11.layout {
+      margin: 57px auto 0px; } }
+  @media (max-width: 991px) {
+    .homepage-block11.layout {
+      margin: 47px auto 0px; } }
+  @media (max-width: 767px) {
+    .homepage-block11.layout {
+      margin: 38px auto 0px; } }
+  @media (max-width: 575px) {
+    .homepage-block11.layout {
+      margin: 33px auto 0px; } }
+  @media (max-width: 479px) {
+    .homepage-block11.layout {
+      width: 37.86%;
+      margin: 29px auto 0px; } }
+  @media (max-width: 383px) {
+    .homepage-block11.layout {
+      width: 44.83%;
+      margin: 26px auto 0px; } }
+
+.homepage-highlights.layout1 {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 40.79%;
+  margin: 35px auto; }
+  @media (max-width: 1199px) {
+    .homepage-highlights.layout1 {
+      margin: 30px auto; } }
+  @media (max-width: 991px) {
+    .homepage-highlights.layout1 {
+      margin: 26px auto; } }
+  @media (max-width: 767px) {
+    .homepage-highlights.layout1 {
+      margin: 21px auto; } }
+  @media (max-width: 575px) {
+    .homepage-highlights.layout1 {
+      margin: 19px auto; } }
+  @media (max-width: 479px) {
+    .homepage-highlights.layout1 {
+      margin: 17px auto; } }
+  @media (max-width: 383px) {
+    .homepage-highlights.layout1 {
+      margin: 16px auto; } }
+
+.homepage-block12 {
+  display: flex;
+  flex-direction: column;
+  background-color: #667080;
+  border-radius: 6px 6px 6px 6px; }
+
+.homepage-block12.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 31.36%;
+  margin: 66px auto 178px; }
+  @media (max-width: 1199px) {
+    .homepage-block12.layout {
+      margin: 57px auto 142px; } }
+  @media (max-width: 991px) {
+    .homepage-block12.layout {
+      margin: 47px auto 102px; } }
+  @media (max-width: 767px) {
+    .homepage-block12.layout {
+      margin: 38px auto 68px; } }
+  @media (max-width: 575px) {
+    .homepage-block12.layout {
+      margin: 33px auto 51px; } }
+  @media (max-width: 479px) {
+    .homepage-block12.layout {
+      width: 37.86%;
+      margin: 29px auto 34px; } }
+  @media (max-width: 383px) {
+    .homepage-block12.layout {
+      width: 44.83%;
+      margin: 26px auto 23px; } }
+
+.homepage-highlights.layout2 {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 44.99%;
+  margin: 35px auto; }
+  @media (max-width: 1199px) {
+    .homepage-highlights.layout2 {
+      margin: 30px auto; } }
+  @media (max-width: 991px) {
+    .homepage-highlights.layout2 {
+      margin: 26px auto; } }
+  @media (max-width: 767px) {
+    .homepage-highlights.layout2 {
+      margin: 21px auto; } }
+  @media (max-width: 575px) {
+    .homepage-highlights.layout2 {
+      margin: 19px auto; } }
+  @media (max-width: 479px) {
+    .homepage-highlights.layout2 {
+      margin: 17px auto; } }
+  @media (max-width: 383px) {
+    .homepage-highlights.layout2 {
+      margin: 16px auto; } }
