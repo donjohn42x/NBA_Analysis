@@ -1,0 +1,385 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+.insights-analytics2-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+
+.insights-analytics2-homevsAway {
+  display: flex;
+  flex-direction: column; }
+
+.insights-analytics2-homevsAway.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 32px 36px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-homevsAway.layout {
+      margin: 28px 31px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-homevsAway.layout {
+      margin: 24px 26px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-homevsAway.layout {
+      margin: 20px 22px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-homevsAway.layout {
+      margin: 18px 20px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-homevsAway.layout {
+      margin: 16px 17px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-homevsAway.layout {
+      margin: 15px 16px; } }
+
+.insights-analytics2-block1 {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center top;
+  object-position: center top; }
+
+.insights-analytics2-block1.layout {
+  position: relative;
+  width: calc(100% - 10px);
+  margin: 0px 0px 0px 10px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-block1.layout {
+      width: calc(100% - 9px);
+      margin: 0px 0px 0px 9px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-block1.layout {
+      width: calc(100% - 7px);
+      margin: 0px 0px 0px 7px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-block1.layout {
+      width: calc(100% - 6px);
+      margin: 0px 0px 0px 6px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-block1.layout {
+      width: calc(100% - 5px);
+      margin: 0px 0px 0px 5px; } }
+
+.insights-analytics2-hero-title1 {
+  display: flex;
+  justify-content: flex-end;
+  font: 700 48px/1 "Inter", Helvetica, Arial, serif;
+  color: #667080;
+  text-align: right;
+  letter-spacing: -0.96px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-hero-title1 {
+      font-size: 43px;
+      text-align: right; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-hero-title1 {
+      font-size: 37px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-hero-title1 {
+      font-size: 32px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-hero-title1 {
+      font-size: 30px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-hero-title1 {
+      font-size: 27px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-hero-title1 {
+      font-size: 25px; } }
+
+.insights-analytics2-hero-title1.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 38.74%;
+  margin: 59px auto 0px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-hero-title1.layout {
+      margin: 50px auto 0px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-hero-title1.layout {
+      margin: 41px auto 0px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-hero-title1.layout {
+      margin: 33px auto 0px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-hero-title1.layout {
+      width: 45.76%;
+      margin: 29px auto 0px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-hero-title1.layout {
+      width: 52.95%;
+      margin: 26px auto 0px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-hero-title1.layout {
+      width: 60%;
+      margin: 23px auto 0px; } }
+
+.insights-analytics2-subtitle {
+  display: flex;
+  justify-content: center;
+  font: 20px/1.1 "Inter", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: -0.4px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-subtitle {
+      font-size: 19px;
+      text-align: center; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-subtitle {
+      font-size: 18px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-subtitle {
+      font-size: 17px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-subtitle {
+      font-size: 16px; } }
+
+.insights-analytics2-subtitle.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 16.08%;
+  margin: 61px auto 0px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-subtitle.layout {
+      margin: 52px auto 0px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-subtitle.layout {
+      margin: 43px auto 0px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-subtitle.layout {
+      margin: 35px auto 0px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-subtitle.layout {
+      margin: 31px auto 0px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-subtitle.layout {
+      margin: 27px auto 0px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-subtitle.layout {
+      margin: 24px auto 0px; } }
+
+.insights-analytics2-flex1 {
+  display: flex; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-flex1 {
+      flex-wrap: wrap;
+      row-gap: 16px; } }
+
+.insights-analytics2-flex1.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 60.23%;
+  margin: 14px 9.36% 0px 30.41%; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-flex1.layout {
+      margin: 12px 9.36% 0px 30.41%; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-flex1.layout {
+      margin: 10px 9.36% 0px 30.41%; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-flex1.layout {
+      margin: 9px 9.36% 0px 30.41%; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-flex1.layout {
+      margin: 8px 9.36% 0px 30.41%; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-flex1.layout {
+      margin: 7px 9.36% 0px 30.41%; } }
+
+.insights-analytics2-flex1-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1 570px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-flex1-item {
+      flex: 0 0 100%; } }
+
+.insights-analytics2-block21 {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/contain no-repeat;
+  background-color: #eef1f4; }
+
+.insights-analytics2-block21.layout {
+  position: relative;
+  height: 422px; }
+
+.insights-analytics2-decorator1 {
+  background: var(--src) center center/contain no-repeat; }
+
+.insights-analytics2-decorator1.layout {
+  position: absolute;
+  top: -1px;
+  height: 423px;
+  width: 570px;
+  right: 0px; }
+
+.insights-analytics2-cover-block-spacer {
+  flex: 0 1 71px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-cover-block-spacer {
+      display: none; } }
+
+.insights-analytics2-cover-block-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1 183px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-cover-block-item {
+      flex: 0 0 100%; } }
+
+.insights-analytics2-image.layout1 {
+  position: relative;
+  height: 191px;
+  margin: 211px 0px 20px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-image.layout1 {
+      margin: 166px 0px 18px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-image.layout1 {
+      margin: 118px 0px 15px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-image.layout1 {
+      margin: 77px 0px 13px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-image.layout1 {
+      margin: 56px 0px 11px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-image.layout1 {
+      margin: 35px 0px 10px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-image.layout1 {
+      margin: 21px 0px 10px; } }
+
+.insights-analytics2-flex21 {
+  display: flex; }
+
+.insights-analytics2-flex21.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 8.7%;
+  margin: 32px auto 71px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-flex21.layout {
+      margin: 28px auto 61px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-flex21.layout {
+      margin: 24px auto 50px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-flex21.layout {
+      margin: 20px auto 41px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-flex21.layout {
+      margin: 18px auto 36px; } }
+  @media (max-width: 479px) {
+    .insights-analytics2-flex21.layout {
+      margin: 16px auto 31px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-flex21.layout {
+      margin: 15px auto 28px; } }
+
+.insights-analytics2-flex2-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 14px; }
+
+.insights-analytics2-group1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #667080;
+  border-radius: 1px; }
+
+.insights-analytics2-group1.layout {
+  position: relative;
+  flex-grow: 1;
+  min-height: 2px;
+  flex-shrink: 0;
+  margin: 11px 0px 9px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-group1.layout {
+      margin: 10px 0px 8px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-group1.layout {
+      margin: 8px 0px 7px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-group1.layout {
+      margin: 7px 0px 6px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-group1.layout {
+      margin: 6px 0px 5px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-group1.layout {
+      margin: 5px 0px; } }
+
+.insights-analytics2-image2 {
+  background: var(--src) center center/contain no-repeat; }
+
+.insights-analytics2-image2.layout {
+  position: absolute;
+  top: -6px;
+  height: 14px;
+  left: 0px;
+  width: 7px; }
+
+.insights-analytics2-flex2-spacer1 {
+  flex: 0 1 10.5px; }
+
+.insights-analytics2-subtitle.layout3 {
+  position: relative;
+  flex: 0 0 auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
+
+.insights-analytics2-flex2-spacer2 {
+  flex: 0 1 11.5px; }
+
+.insights-analytics2-group2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #667080;
+  border-radius: 1px; }
+
+.insights-analytics2-group2.layout {
+  position: relative;
+  flex-grow: 1;
+  min-height: 2px;
+  flex-shrink: 0;
+  margin: 11px 0px 9px; }
+  @media (max-width: 1199px) {
+    .insights-analytics2-group2.layout {
+      margin: 10px 0px 8px; } }
+  @media (max-width: 991px) {
+    .insights-analytics2-group2.layout {
+      margin: 8px 0px 7px; } }
+  @media (max-width: 767px) {
+    .insights-analytics2-group2.layout {
+      margin: 7px 0px 6px; } }
+  @media (max-width: 575px) {
+    .insights-analytics2-group2.layout {
+      margin: 6px 0px 5px; } }
+  @media (max-width: 383px) {
+    .insights-analytics2-group2.layout {
+      margin: 5px 0px; } }
+
+.insights-analytics2-image2.layout3 {
+  position: absolute;
+  top: -6px;
+  height: 14px;
+  width: 7px;
+  right: 0px; }

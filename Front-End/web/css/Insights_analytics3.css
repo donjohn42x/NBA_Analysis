@@ -1,0 +1,211 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+.insights-analytics3-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+
+.insights-analytics3-flex {
+  display: flex;
+  flex-direction: column; }
+
+.insights-analytics3-flex.layout1 {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 32px 36px; }
+
+.insights-analytics3-block1 {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center top;
+  object-position: center top; }
+
+.insights-analytics3-block1.layout {
+  position: relative;
+  width: calc(100% - 10px);
+  margin: 0px 0px 0px 10px; }
+
+.insights-analytics3-hero-title4 {
+  display: flex;
+  justify-content: flex-end;
+  font: 700 48px/1 "Inter", Helvetica, Arial, serif;
+  color: #667080;
+  text-align: right;
+  letter-spacing: -0.96px; }
+
+.insights-analytics3-hero-title4.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 38.74%;
+  margin: 59px auto 0px; }
+
+.insights-analytics3-subtitle1 {
+  display: flex;
+  justify-content: center;
+  font: 20px/1.1 "Inter", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: -0.4px; }
+
+.insights-analytics3-subtitle1.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 16.37%;
+  margin: 61px auto 0px; }
+
+.insights-analytics3-flex11 {
+  display: flex; }
+
+.insights-analytics3-flex11.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 83.77%;
+  margin: 41px 6.87% 0px 9.36%; }
+
+.insights-analytics3-flex1-item1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 241px; }
+
+.insights-analytics3-block23 {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/contain no-repeat;
+  background-color: #eef1f4; }
+
+.insights-analytics3-block23.layout {
+  position: relative;
+  height: 303px; }
+
+.insights-analytics3-decorator1.layout1 {
+  position: absolute;
+  top: -1px;
+  height: 304px;
+  width: 241px;
+  right: 0px; }
+
+.insights-analytics3-cover-block-spacer1 {
+  flex: 0 1 212px; }
+
+.insights-analytics3-cover-block-item1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 240px; }
+
+.insights-analytics3-block3 {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/contain no-repeat;
+  background-color: #eef1f4; }
+
+.insights-analytics3-block3.layout {
+  position: relative;
+  height: 303px; }
+
+.insights-analytics3-decorator2 {
+  background: var(--src) center center/contain no-repeat; }
+
+.insights-analytics3-decorator2.layout {
+  position: absolute;
+  top: -1px;
+  height: 304px;
+  width: 240px;
+  right: 0px; }
+
+.insights-analytics3-flex1-spacer1 {
+  flex: 0 1 212px; }
+
+.insights-analytics3-flex2-item1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 241px; }
+
+.insights-analytics3-block24 {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/contain no-repeat;
+  background-color: #eef1f4; }
+
+.insights-analytics3-block24.layout {
+  position: relative;
+  height: 303px; }
+
+.insights-analytics3-decorator1.layout2 {
+  position: absolute;
+  top: -1px;
+  height: 304px;
+  width: 241px;
+  right: 0px; }
+
+.insights-analytics3-flex23 {
+  display: flex; }
+
+.insights-analytics3-flex23.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 93.5px;
+  min-width: 93.5px;
+  margin: 124px auto 71px; }
+
+.insights-analytics3-flex2-item3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 1 7px; }
+
+.insights-analytics3-group {
+  display: flex;
+  flex-direction: column; }
+
+.insights-analytics3-group.layout2 {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 5px 0px 3px; }
+
+.insights-analytics3-box.layout1 {
+  position: absolute;
+  top: 6px;
+  height: 2px;
+  width: 14px;
+  right: -7px; }
+
+.insights-analytics3-image2.layout2 {
+  position: relative;
+  height: 14px;
+  width: 7px;
+  min-width: 7px; }
+
+.insights-analytics3-flex3-spacer1 {
+  flex: 0 1 17.5px; }
+
+.insights-analytics3-subtitle3 {
+  display: flex;
+  justify-content: center;
+  font: 20px/1.1 "Inter", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: -0.4px; }
+
+.insights-analytics3-subtitle3.layout {
+  position: relative;
+  flex: 0 0 auto;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
