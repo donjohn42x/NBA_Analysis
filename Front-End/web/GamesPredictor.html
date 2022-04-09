@@ -44,58 +44,96 @@
           class="games-predictor-block1 layout"
           style="width:1368px;height:200px;"
         />
-        <div class="games-predictor-flex3 layout">
-          <h1 class="games-predictor-hero-title layout">Game Win Predictor</h1>
+        <div style = "text-align:left">
+          <h1 style = "text-align:left">Game Win Predictor</h1>
           <div class="games-predictor-flex3-spacer"></div>
-          <button type="button" onclick="alert('UnderConstruction')">Refresh Data Now</button> 
+          <button type="button" onclick="alert('UnderConstruction')">Refresh Game Data Now</button> 
         </div>
         <div class="games-predictor-flex4 layout">
           <div class="games-predictor-flex4-item">
-            <div class="games-predictor-cover-block layout">
-              <div class="games-predictor-text-body layout">Home Team</div>
               <div class="games-predictor-block111 layout">
                 <div class="games-predictor-block31 layout">
                   <div class="games-predictor-group layout">
                     <div class="games-predictor-flex2 layout">
-                      <h5 class="games-predictor-highlights2 layout">
-                        Select Team 1
-                      </h5>
-                      <form action="/action_page.php" method="get">
-                        <label for="team">Choose your home team from the list:</label>
-                        <input list="teams" name="team" id="team">
-                        <datalist id="teams">
+                      <h4 style = "text-align:left">
+                        Please Select the Home and Away Teams
+                      </h4>
+                      <form action="/nba_analysis.ipynb" method="get">
+                        <label for="hometeam">Home Team:</label>
+                        <input list="hometeamslist" name="hometeamname" id="hometeamid">
+                        <datalist id="hometeamslist">
                           <option value="ATL"> Atlanta Hawks</option>
-                          <option value="Celtics">
-                          <option value="Pelicans">
-                          <option value="Bulls">
-                          <option value="Mavericks">
-                          <option value="Nuggets">
-                          <option value="Rockets">
-                          <option value="Clippers">
-                          <option value="Lakers">
-                          <option value="Heat">
-                          <option value="Bucks">
-                          <option value="Timberwolves">
-                          <option value="Nets">
-                          <option value="Knicks">
-                          <option value="Magic">
-                          <option value="Pacers">
-                          <option value="76ers">
-                          <option value="Suns">
-                          <option value="Trail Blazers">
-                          <option value="Kings">
-                          <option value="Spurs">
-                          <option value="Thunder">
-                          <option value="Raptors">
-                          <option value="Jazz">
-                          <option value="Grizzlies">
-                          <option value="Wizards">
-                          <option value="Pistons">
-                          <option value="Hornets">
-                          <option value="Cavaliers">
-                          <option value="Warriors">
-                        </datalist>
-                        <input type="submit">
+                          <option value="BOS"> Boston Celtics</option>
+                          <option value="NOP"> New Orleans Pelicans</option>
+                          <option value="CHI"> Chicago Bulls</option>
+                          <option value="DAL">Dallas Mavericks</option>
+                          <option value="DEN">Denver Nuggets</option>
+                          <option value="HOU">Houston Rockets</option>
+                          <option value="LAC">Los Angeles Clippers</option>
+                          <option value="LAL">Los Angeles Lakers</option>
+                          <option value="MIA">Miami Heat</option>
+                          <option value="MIL">Milwaukee Bucks</option>
+                          <option value="MIN">Minnesota Timberwolves</option>
+                          <option value="BKN">Brooklyn Nets</option>
+                          <option value="NYK">New York Knicks</option>
+                          <option value="ORL">Orlando Magic</option>
+                          <option value="IND">Indiana Pacers</option>
+                          <option value="PHI">Philadelphia 76ers</option>
+                          <option value="PHX">Phoenix Suns</option>
+                          <option value="POR">Portland Trail Blazers</option>
+                          <option value="SAC">Sacramento Kings</option>
+                          <option value="SAS">San Antonio Spurs</option>
+                          <option value="OKC">Oklahoma City Thunder</option>
+                          <option value="TOR">Toronto Raptors</option>
+                          <option value="UTA">Utah Jazz</option>
+                          <option value="MEM">Memphis Grizzlies</option>
+                          <option value="WAS">Washington Wizards</option>
+                          <option value="DET">Detroit Pistons</option>
+                          <option value="CHA">Charlotte Hornets</option>
+                          <option value="CLE">Cleveland Cavaliers</option>
+                          <option value="GSW">Golden State Warriors</option>
+                        </datalist><br><br>
+                        <label for="awayteam">Away Team</label>
+                        <input list="awayteamslist" name="awayteamname" id="awayteamid">
+                        <datalist id="awayteamslist">
+                          <option value="ATL"> Atlanta Hawks</option>
+                          <option value="BOS"> Boston Celtics</option>
+                          <option value="NOP"> New Orleans Pelicans</option>
+                          <option value="CHI"> Chicago Bulls</option>
+                          <option value="DAL">Dallas Mavericks</option>
+                          <option value="DEN">Denver Nuggets</option>
+                          <option value="HOU">Houston Rockets</option>
+                          <option value="LAC">Los Angeles Clippers</option>
+                          <option value="LAL">Los Angeles Lakers</option>
+                          <option value="MIA">Miami Heat</option>
+                          <option value="MIL">Milwaukee Bucks</option>
+                          <option value="MIN">Minnesota Timberwolves</option>
+                          <option value="BKN">Brooklyn Nets</option>
+                          <option value="NYK">New York Knicks</option>
+                          <option value="ORL">Orlando Magic</option>
+                          <option value="IND">Indiana Pacers</option>
+                          <option value="PHI">Philadelphia 76ers</option>
+                          <option value="PHX">Phoenix Suns</option>
+                          <option value="POR">Portland Trail Blazers</option>
+                          <option value="SAC">Sacramento Kings</option>
+                          <option value="SAS">San Antonio Spurs</option>
+                          <option value="OKC">Oklahoma City Thunder</option>
+                          <option value="TOR">Toronto Raptors</option>
+                          <option value="UTA">Utah Jazz</option>
+                          <option value="MEM">Memphis Grizzlies</option>
+                          <option value="WAS">Washington Wizards</option>
+                          <option value="DET">Detroit Pistons</option>
+                          <option value="CHA">Charlotte Hornets</option>
+                          <option value="CLE">Cleveland Cavaliers</option>
+                          <option value="GSW">Golden State Warriors</option>
+                        </datalist><br><br>
+                        <input type="submit"><br><br>
+                        <h2 class="games-predictor-subtitle4-box layout">
+                          <pre class="games-predictor-subtitle4">The Winner Is: </pre>
+                          <form oninput="">
+                            <output name="Winner"></output>
+                          </form>
+                        </h2>
                       </form>
                       <div class="games-predictor-flex1-spacer"></div>
                       <div class="games-predictor-flex1-item2">
@@ -110,75 +148,11 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="games-predictor-undefined-spacer"></div>
-          <div class="games-predictor-undefined-item">
-            <div class="games-predictor-cover-block1 layout">
-              <div class="games-predictor-text-body layout">Away Team</div>
-              <div class="games-predictor-block32 layout">
-                <div class="games-predictor-flex5 layout">
-                  <h5 class="games-predictor-highlights10 layout">
-                    Select Team 2
-                  </h5>
-                  <form action="/action_page.php" method="get">
-                    <label for="team">Choose your away team from the list:</label>
-                    <input list="teams" name="team" id="team">
-                    <datalist id="teams">
-                      <option value="Hawks">
-                      <option value="Celtics">
-                      <option value="Pelicans">
-                      <option value="Bulls">
-                      <option value="Mavericks">
-                      <option value="Nuggets">
-                      <option value="Rockets">
-                      <option value="Clippers">
-                      <option value="Lakers">
-                      <option value="Heat">
-                      <option value="Bucks">
-                      <option value="Timberwolves">
-                      <option value="Nets">
-                      <option value="Knicks">
-                      <option value="Magic">
-                      <option value="Pacers">
-                      <option value="76ers">
-                      <option value="Suns">
-                      <option value="Trail Blazers">
-                      <option value="Kings">
-                      <option value="Spurs">
-                      <option value="Thunder">
-                      <option value="Raptors">
-                      <option value="Jazz">
-                      <option value="Grizzlies">
-                      <option value="Wizards">
-                      <option value="Pistons">
-                      <option value="Hornets">
-                      <option value="Cavaliers">
-                      <option value="Warriors">
-                    </datalist>
-                    <input type="submit">
-                  </form>
-                  <div class="games-predictor-flex-spacer"></div>
-                  <div class="games-predictor-flex-item">
-                    <div
-                      style="--src:url(assets/11e01a6f1709e96ebbee3e04ce5be687.png)"
-                      class="games-predictor-image1 layout"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div>         
           <div class="games-predictor-undefined-spacer1"></div>
           <div class="games-predictor-undefined-item1">
             <div class="games-predictor-flex51 layout">
-              <h3 class="games-predictor-subtitle4-box layout">
-                <pre class="games-predictor-subtitle4">The Winner Is </pre>
-              </h3>
-              <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-                <input type="range" id="a" value="50">
-                +<input type="number" id="b" value="25">
-                =<output name="x" for="a b"></output>
-                </form>
+
               <div class="games-predictor-block6 layout">
                 <div
                   style="--src:url(assets/4454a9e5586bd46fa7e8bc9bbf6ff5c7.png)"
