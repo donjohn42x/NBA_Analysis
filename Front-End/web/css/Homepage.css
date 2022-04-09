@@ -43,12 +43,12 @@
   justify-content: flex-end;
   font: 700 48px/1 "Inter", Helvetica, Arial, serif;
   color: #667080;
-  text-align: right;
+  text-align: center;
   letter-spacing: -0.96px; }
   @media (max-width: 1199px) {
     .homepage-hero-title3 {
       font-size: 43px;
-      text-align: right; } }
+      text-align: center; } }
   @media (max-width: 991px) {
     .homepage-hero-title3 {
       font-size: 37px; } }
