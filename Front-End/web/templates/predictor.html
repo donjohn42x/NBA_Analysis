@@ -10,12 +10,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
 </head>
 
+<style>
+  option {
+    color: black;
+  }
+  select {
+    color: black;
+  }
+
+  input{
+    margin-top: 30px;
+  }
+
+</style>
 <body>
   <div class="container">
+    <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
   <!-- This section is coming from the backend -->
   <div class="row">
     <form action = "{{ url_for('get_teams') }}" method = "post">
-      <label for="lang">Language</label>
+
       <!-- Home team  -->
       <h2>Select Home team</h2>
       <select name="home" id="lang">
@@ -91,11 +105,13 @@
 
 
       </select>
-
-      <input type="submit" value="Submit" />
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+      
     </form>
     <div>
-        <h2>{{ winner }}!!!</h2>
+        <h2>{{ winner }}</h2>
     </div>
   </div>
 </div>

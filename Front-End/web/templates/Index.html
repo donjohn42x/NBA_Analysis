@@ -13,29 +13,26 @@
     <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/css/Homepage.css" />
   </head>
+  
 
   <body style="display: flex; flex-direction: column">
     <div class="machine-learning homepage-block">
-      <div class="homepage-flex">
-          <script src="{{ url_for('static', filename='assets/37a0d17c7b756654825d4cd9f1abfb57.jpg') }}"></script>
-          <!-- alt="Image placeholder/Type5 (has overflow hidden)"
-          class="homepage-block3 layout"
-          style="width:1368px;height:200px;" -->
+      <div class="homepage-flex" style="margin-left: 50px;">
+          <!-- <script src="{{ url_for('static', filename='assets/37a0d17c7b756654825d4cd9f1abfb57.jpg') }}"></script> -->
+          <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
 
         <h1 class="homepage-hero-title3 layout">
           Welcome to NBA Games Predictor
         </h1>
         <div class="homepage-block2 layout">
-          <h5 class="homepage-highlights layout">Game Win Predictor</h5>
-            <a href="{{url_for('game_win_predictor')}}">select</a> </a>
+          <h3 class="homepage-highlights layout"><a href="{{url_for('game_win_predictor')}}" style="color: white;">Game Win Predictor</a></h3>
+            <!-- <button><a href="{{url_for('game_win_predictor')}}"></a></button> -->
         </div>
         <div class="homepage-block11 layout">
-          <h5 class="homepage-highlights layout1">Insights and Analytics</h5>
-            <a href="{{url_for('analysis')}}">select</a> </a>
+          <h3 class="homepage-highlights layout"><a href="{{url_for('analysis')}}" style="color: white;">Insight & Analysis</a></h3>
         </div>
         <div class="homepage-block12 layout">
-          <h5 class="homepage-highlights layout2">Machine Learning Model</h5>
-            <a href="{{url_for('ml')}}">select</a> </a>
+          <h3 class="homepage-highlights layout"><a href="{{url_for('ml')}}" style="color: white;">Machine Learning Model</a></h3>
         </div>
       </div>
     </div>

@@ -8,13 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -27,32 +21,21 @@
       type="text/css"
       href="/css/Insights_analytics3.css"
     />
-
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"
-    ></script>
   </head>
 
   <body style="display: flex; flex-direction: column">
-    <div class="machine-learning insights-analytics3-block">
+    <div class="machine-learning insights-analytics3-block" style="margin-left: 50px;">
       <div class="insights-analytics3-flex layout1">
-        <img
-          src="assets/37a0d17c7b756654825d4cd9f1abfb57.jpg"
-          alt="Image placeholder/Type5 (has overflow hidden)"
-          class="insights-analytics3-block1 layout"
-          style="width:1368px;height:200px;"
-        />
+        <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
         <h1 class="insights-analytics3-hero-title4 layout">
           Insights and Analytics
         </h1>
         <h3 class="insights-analytics3-subtitle1 layout">
           Features/Trend Analysis
         </h3>
+        <a href="Insights_analytics1.html">
+          <button action=""><a href="{{url_for('analysis2')}}">Previous</a> </a></button>
+        </a>
         <div class="insights-analytics3-flex11 layout">
           <div class="insights-analytics3-flex1-item1">
             <div
@@ -101,9 +84,6 @@
             </div>
           </div>
           <div class="insights-analytics3-flex3-spacer1"></div>
-          <a href="Insights_analytics2.html">
-            <button>Previous</button>
-          </a>
         </div>
       </div>
     </div>

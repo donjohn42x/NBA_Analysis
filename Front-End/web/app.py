@@ -75,6 +75,13 @@ def read_data():
 def analysis():
     return render_template("Insights_Analytics1.html")
 
+@app.route('/analysis2',methods=['GET','POST'])
+def analysis2():
+    return render_template("Insights_Analytics2.html")
+
+@app.route('/analysis3',methods=['GET','POST'])
+def analysis3():
+    return render_template("Insights_Analytics3.html")
 
 @app.route('/ml',methods=['GET','POST'])
 def ml():

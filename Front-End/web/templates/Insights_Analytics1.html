@@ -17,49 +17,33 @@
       href="/css/Insights_Analytics1.css"
     />
 
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"
-    ></script>
+    <style>
+      img {
+        width: 900px;
+        height: 800px;
+      }
+    </style>
+
   </head>
 
   <body style="display: flex; flex-direction: column">
     <div class="machine-learning insights--analytics1-block">
-      <div class="insights--analytics1-flex">
-        <img
-          src="assets/37a0d17c7b756654825d4cd9f1abfb57.jpg"
-          alt="Image placeholder/Type5 (has overflow hidden)"
-          class="insights--analytics1-block1 layout"
-          style="width:1368px;height:200px;"
-        />
+      <div class="insights--analytics1-flex" style="margin-left: 50px;">
+        <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
         <h1 class="insights--analytics1-hero-title2 layout">
           Insights and Analytics
         </h1>
         <h3 class="layout1">Features Heat-Map</h3>
+        <a href="Insights_analytics2.html">
+          <button action=""><a href="{{url_for('analysis2')}}">Next</a> </a></button>
+        </a>
         <div class=" ">
-          <div class="">
-            <div
-              style="--src:url(assets/7e2d82d81aaba493847e42f04121d5d8.png)"
-              class="insights--analytics1-block22 layout"
-            >
-              <div
-                style="--src:url(assets/d2b7633a566a5cee6e55fef28d40ea1f.png)"
-                class=" "
-              ></div>
-            </div>
-          </div>
-          <div class=""></div>
-          <div class="">
-            <div
-              style="--src:url(assets/ba23d00f3d92e8aa42c2725152cb3b2a.png)"
-              class="layout2"
-            ></div>
+          <div class="heatmap_img">
+            <img src="./static/assets/corr_matrix.png" alt="">
           </div>
         </div>
         <div class="insights--analytics1-flex22 layout">
-          <a href="Insights_analytics2.html">
-            <button>Next</button>
-          </a>
+          
           <div class="insights--analytics1-flex2-spacer"></div>
           <div class="insights--analytics1-flex2-item2">
             <div class="insights--analytics1-group layout1">
