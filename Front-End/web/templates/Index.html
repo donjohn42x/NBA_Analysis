@@ -13,7 +13,30 @@
     <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="/css/Homepage.css" />
   </head>
-  
+
+  <style>
+    h1, h3{
+      text-align: center;
+    }
+
+    h3{
+      border-style: solid;
+      border-color: white;
+      border-radius: 10px;
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      padding-top: 10px;
+    }
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  </style>
+
 
   <body style="display: flex; flex-direction: column">
     <div class="machine-learning homepage-block">
@@ -25,14 +48,17 @@
           Welcome to NBA Games Predictor!
         </h1>
         <div class="homepage-block2 layout">
-          <h3 class="homepage-highlights layout"><a href="{{url_for('game_win_predictor')}}" style="color: white;">1. Game Win Predictor</a></h3>
+            <h3 class="homepage-highlights layout">
+              <a href="{{url_for('game_win_predictor')}}" style="color: white;">Game Win Predictor
+              </a>
+          </h3>
             <!-- <button><a href="{{url_for('game_win_predictor')}}"></a></button> -->
         </div>
         <div class="homepage-block11 layout">
-          <h3 class="homepage-highlights layout"><a href="{{url_for('analysis')}}" style="color: white;">2. Insight & Analysis</a></h3>
+          <h3 class="homepage-highlights layout"><a href="{{url_for('analysis')}}" style="color: white;">Insight & Analysis</a></h3>
         </div>
         <div class="homepage-block12 layout">
-          <h3 class="homepage-highlights layout"><a href="{{url_for('ml')}}" style="color: white;">3. Machine Learning Model</a></h3>
+          <h3 class="homepage-highlights layout"><a href="{{url_for('ml')}}" style="color: white;">Machine Learning Model</a></h3>
         </div>
       </div>
     </div>
