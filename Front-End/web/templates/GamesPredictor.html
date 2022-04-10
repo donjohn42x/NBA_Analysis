@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/css/GamesPredictor.css" />
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
+  </head>
+
+  <body style="display: flex; flex-direction: column">
+    <div class="machine-learning games-predictor-block">
+      <div class="games-predictor-flex2 layout1">
+        <img
+          src="assets/e0e4f3adcd4bea57cb0e532e7e4bd1d3.jpg"
+          alt="Image placeholder/Type5 (has overflow hidden)"
+          class="games-predictor-block1 layout"
+          style="width:1368px;height:200px;"
+        />
+        <div style = "text-align:left">
+          <h1 style = "text-align:left">Game Win Predictor</h1>
+          <div class="games-predictor-flex3-spacer"></div>
+          <button type="button" onclick="alert('UnderConstruction')">Refresh Game Data Now</button> 
+        </div>
+        <div class="games-predictor-flex4 layout">
+          <div class="games-predictor-flex4-item">
+              <div class="games-predictor-block111 layout">
+                <div class="games-predictor-block31 layout">
+                  <div class="games-predictor-group layout">
+                    <div class="games-predictor-flex2 layout">
+                      <h4 style = "text-align:left">
+                        Please Select the Home and Away Teams
+                      </h4>
+
+                    <form action = "{{ url_for('get_teams') }}" method = "post">
+                    <label for="lang">Language</label>
+                    <select name="languages" id="lang">
+                      <option value="javascript">Select a language</option>
+                      <option value="TOR">Toronto raptors</option>
+                      <option value="php">PHP</option>
+                      <option value="java">Java</option>
+                      <option value="golang">Golang</option>
+                      <option value="python">Python</option>
+                      <option value="c#">C#</option>
+                      <option value="C++">C++</option>
+                      <option value="erlang">Erlang</option>
+                    </select>
+                    <input type="submit" value="Submit" />
+                    </form>
+
+                      <!-- <form action = "{{ url_for('get_teams') }}" method = “post”>
+                        <label for="hometeam">Home Team:</label>
+                        <input list="hometeamslist" name="hometeamname" id="hometeamid">
+                        <datalist id="hometeamslist">
+                          <option value="ATL"> Atlanta Hawks</option>
+                          <option value="BOS"> Boston Celtics</option>
+                          <option value="NOP"> New Orleans Pelicans</option>
+                          <option value="CHI"> Chicago Bulls</option>
+                          <option value="DAL">Dallas Mavericks</option>
+                          <option value="DEN">Denver Nuggets</option>
+                          <option value="HOU">Houston Rockets</option>
+                          <option value="LAC">Los Angeles Clippers</option>
+                          <option value="LAL">Los Angeles Lakers</option>
+                          <option value="MIA">Miami Heat</option>
+                          <option value="MIL">Milwaukee Bucks</option>
+                          <option value="MIN">Minnesota Timberwolves</option>
+                          <option value="BKN">Brooklyn Nets</option>
+                          <option value="NYK">New York Knicks</option>
+                          <option value="ORL">Orlando Magic</option>
+                          <option value="IND">Indiana Pacers</option>
+                          <option value="PHI">Philadelphia 76ers</option>
+                          <option value="PHX">Phoenix Suns</option>
+                          <option value="POR">Portland Trail Blazers</option>
+                          <option value="SAC">Sacramento Kings</option>
+                          <option value="SAS">San Antonio Spurs</option>
+                          <option value="OKC">Oklahoma City Thunder</option>
+                          <option value="TOR">Toronto Raptors</option>
+                          <option value="UTA">Utah Jazz</option>
+                          <option value="MEM">Memphis Grizzlies</option>
+                          <option value="WAS">Washington Wizards</option>
+                          <option value="DET">Detroit Pistons</option>
+                          <option value="CHA">Charlotte Hornets</option>
+                          <option value="CLE">Cleveland Cavaliers</option>
+                          <option value="GSW">Golden State Warriors</option>
+                        </datalist><br><br>
+                        <label for="awayteam">Away Team</label>
+                        <input list="awayteamslist" name="awayteamname" id="awayteamid">
+                        <datalist id="awayteamslist">
+                          <option value="ATL"> Atlanta Hawks</option>
+                          <option value="BOS"> Boston Celtics</option>
+                          <option value="NOP"> New Orleans Pelicans</option>
+                          <option value="CHI"> Chicago Bulls</option>
+                          <option value="DAL">Dallas Mavericks</option>
+                          <option value="DEN">Denver Nuggets</option>
+                          <option value="HOU">Houston Rockets</option>
+                          <option value="LAC">Los Angeles Clippers</option>
+                          <option value="LAL">Los Angeles Lakers</option>
+                          <option value="MIA">Miami Heat</option>
+                          <option value="MIL">Milwaukee Bucks</option>
+                          <option value="MIN">Minnesota Timberwolves</option>
+                          <option value="BKN">Brooklyn Nets</option>
+                          <option value="NYK">New York Knicks</option>
+                          <option value="ORL">Orlando Magic</option>
+                          <option value="IND">Indiana Pacers</option>
+                          <option value="PHI">Philadelphia 76ers</option>
+                          <option value="PHX">Phoenix Suns</option>
+                          <option value="POR">Portland Trail Blazers</option>
+                          <option value="SAC">Sacramento Kings</option>
+                          <option value="SAS">San Antonio Spurs</option>
+                          <option value="OKC">Oklahoma City Thunder</option>
+                          <option value="TOR">Toronto Raptors</option>
+                          <option value="UTA">Utah Jazz</option>
+                          <option value="MEM">Memphis Grizzlies</option>
+                          <option value="WAS">Washington Wizards</option>
+                          <option value="DET">Detroit Pistons</option>
+                          <option value="CHA">Charlotte Hornets</option>
+                          <option value="CLE">Cleveland Cavaliers</option>
+                          <option value="GSW">Golden State Warriors</option>
+                        </datalist><br><br>
+                        <input type="submit"><br><br>
+                        <h2 class="games-predictor-subtitle4-box layout">
+                          <pre class="games-predictor-subtitle4">The Winner Is: </pre>
+                          <form oninput="">
+                            <output name="Winner"></output>
+                          </form>
+                        </h2>
+                      </form> -->
+                      <div class="games-predictor-flex1-spacer"></div>
+                      <div class="games-predictor-flex1-item2">
+                        <div
+                          style="--src:url(assets/11e01a6f1709e96ebbee3e04ce5be687.png)"
+                          class="games-predictor-image1 layout"
+                        ></div>
+                      </div>
+                    </div>
+                    <hr class="games-predictor-line layout" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>         
+          <div class="games-predictor-undefined-spacer1"></div>
+          <div class="games-predictor-undefined-item1">
+            <div class="games-predictor-flex51 layout">
+
+              <div class="games-predictor-block6 layout">
+                <div
+                  style="--src:url(assets/4454a9e5586bd46fa7e8bc9bbf6ff5c7.png)"
+                  class="layout3"
+                ></div>
+                <div
+                  style="--src:url(assets/e1865b56d74e0fb7442503bb3e5757e1.png)"
+                  class="layout4"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+  </body>
+</html>

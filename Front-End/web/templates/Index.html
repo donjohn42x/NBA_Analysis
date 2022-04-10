@@ -37,26 +37,25 @@
   <body style="display: flex; flex-direction: column">
     <div class="machine-learning homepage-block">
       <div class="homepage-flex">
-        <img
-          src="assets/37a0d17c7b756654825d4cd9f1abfb57.jpg"
-          alt="Image placeholder/Type5 (has overflow hidden)"
+          <script src="{{ url_for('static', filename='assets/37a0d17c7b756654825d4cd9f1abfb57.jpg') }}"></script>
+          <!-- alt="Image placeholder/Type5 (has overflow hidden)"
           class="homepage-block3 layout"
-          style="width:1368px;height:200px;"
-        />
+          style="width:1368px;height:200px;" -->
+
         <h1 class="homepage-hero-title3 layout">
           Welcome to NBA Games Predictor
         </h1>
         <div class="homepage-block2 layout">
           <h5 class="homepage-highlights layout">Game Win Predictor</h5>
-            <a href="GamesPredictor.html">select</a> </a>
+            <a href="{{url_for('game_win_predictor')}}">select</a> </a>
         </div>
         <div class="homepage-block11 layout">
           <h5 class="homepage-highlights layout1">Insights and Analytics</h5>
-            <a href="Insights_Analytics1.html">select</a> </a>
+            <a href="{{url_for('analysis')}}">select</a> </a>
         </div>
         <div class="homepage-block12 layout">
           <h5 class="homepage-highlights layout2">Machine Learning Model</h5>
-            <a href="MachineLearning.html">select</a> </a>
+            <a href="{{url_for('ml')}}">select</a> </a>
         </div>
       </div>
     </div>

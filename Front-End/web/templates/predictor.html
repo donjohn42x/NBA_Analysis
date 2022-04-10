@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+  <!-- This section is coming from the backend -->
+  <div class="row">
+    <form action = "{{ url_for('get_teams') }}" method = "post">
+      <label for="lang">Language</label>
+      <!-- Home team  -->
+      <h2>Select Home team</h2>
+      <select name="home" id="lang">
+        <option value="ATL"> Atlanta Hawks</option>
+        <option value="BOS"> Boston Celtics</option>
+        <option value="NOP"> New Orleans Pelicans</option>
+        <option value="CHI"> Chicago Bulls</option>
+        <option value="DAL">Dallas Mavericks</option>
+        <option value="DEN">Denver Nuggets</option>
+        <option value="HOU">Houston Rockets</option>
+        <option value="LAC">Los Angeles Clippers</option>
+        <option value="LAL">Los Angeles Lakers</option>
+        <option value="MIA">Miami Heat</option>
+        <option value="MIL">Milwaukee Bucks</option>
+        <option value="MIN">Minnesota Timberwolves</option>
+        <option value="BKN">Brooklyn Nets</option>
+        <option value="NYK">New York Knicks</option>
+        <option value="ORL">Orlando Magic</option>
+        <option value="IND">Indiana Pacers</option>
+        <option value="PHI">Philadelphia 76ers</option>
+        <option value="PHX">Phoenix Suns</option>
+        <option value="POR">Portland Trail Blazers</option>
+        <option value="SAC">Sacramento Kings</option>
+        <option value="SAS">San Antonio Spurs</option>
+        <option value="OKC">Oklahoma City Thunder</option>
+        <option value="TOR">Toronto Raptors</option>
+        <option value="UTA">Utah Jazz</option>
+        <option value="MEM">Memphis Grizzlies</option>
+        <option value="WAS">Washington Wizards</option>
+        <option value="DET">Detroit Pistons</option>
+        <option value="CHA">Charlotte Hornets</option>
+        <option value="CLE">Cleveland Cavaliers</option>
+        <option value="GSW">Golden State Warriors</option>
+        
+
+
+      </select>
+      <br>
+      <!-- Away team stuff -->
+      <h2>Select Away team</h2>
+      <select name="away" id="lang">
+        <option value="ATL"> Atlanta Hawks</option>
+        <option value="BOS"> Boston Celtics</option>
+        <option value="NOP"> New Orleans Pelicans</option>
+        <option value="CHI"> Chicago Bulls</option>
+        <option value="DAL">Dallas Mavericks</option>
+        <option value="DEN">Denver Nuggets</option>
+        <option value="HOU">Houston Rockets</option>
+        <option value="LAC">Los Angeles Clippers</option>
+        <option value="LAL">Los Angeles Lakers</option>
+        <option value="MIA">Miami Heat</option>
+        <option value="MIL">Milwaukee Bucks</option>
+        <option value="MIN">Minnesota Timberwolves</option>
+        <option value="BKN">Brooklyn Nets</option>
+        <option value="NYK">New York Knicks</option>
+        <option value="ORL">Orlando Magic</option>
+        <option value="IND">Indiana Pacers</option>
+        <option value="PHI">Philadelphia 76ers</option>
+        <option value="PHX">Phoenix Suns</option>
+        <option value="POR">Portland Trail Blazers</option>
+        <option value="SAC">Sacramento Kings</option>
+        <option value="SAS">San Antonio Spurs</option>
+        <option value="OKC">Oklahoma City Thunder</option>
+        <option value="TOR">Toronto Raptors</option>
+        <option value="UTA">Utah Jazz</option>
+        <option value="MEM">Memphis Grizzlies</option>
+        <option value="WAS">Washington Wizards</option>
+        <option value="DET">Detroit Pistons</option>
+        <option value="CHA">Charlotte Hornets</option>
+        <option value="CLE">Cleveland Cavaliers</option>
+        <option value="GSW">Golden State Warriors</option>
+
+
+
+      </select>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <div>
+        <h2>{{ winner }}!!!</h2>
+    </div>
+  </div>
+</div>
+  <!--  This section is for plotting your graphs, no need for now -->
+  <!-- <div class="row">
+    <h1>Index Page</h1>
+    <button onclick="plotcharts()">Display charts</button>
+    <div id="plot2"></div>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  </div> -->
+  <!-- ################################################ -->
+
+
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+</html>
