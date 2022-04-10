@@ -36,7 +36,7 @@ def get_teams():
             result = "Away team wins"
        
         # print(f"This is python printing something from front-end - {status}")
-        return render_template('predictor.html', winner=result)
+        return render_template('predictor.html', winner=result+'!!!')
     else:
         return redirect(url_for("posts"))
 
