@@ -24,23 +24,23 @@ def get_teams():
         # generate the table from your two teams
         print(home_team, away_team)
 
+
         # read in your model
         
         # pass in the data into the model
         # result from model is 1
         res = 1
         if res == 1:
-            result = "home team wins"
+            result = "Home team wins"
         else:
-            result = "away team wins"
-        # send the data back to front end
-        
+            result = "Away team wins"
+       
         # print(f"This is python printing something from front-end - {status}")
         return render_template('predictor.html', winner=result)
     else:
         return redirect(url_for("posts"))
 
-# Imoporta game detail data from database
+# Import game detail data from database
 @app.route('/data')
 def read_data():
     # df = pd.read_csv('static/nba_game_details_cleaned.csv')
@@ -66,7 +66,7 @@ def read_data():
        'STL_home', 'BLK_away', 'BLK_home', 'TOV_away', 'TOV_home', 'PF_away',
        'PF_home', 'PTS_away', 'PTS_home', 'WIN_home']
 
-    print(games)
+    return games
     
     # return games
 
