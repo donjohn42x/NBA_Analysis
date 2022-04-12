@@ -136,6 +136,22 @@ model.fit(X_resampled, y_resampled)
 
 from sklearn.metrics import balanced_accuracy_score
 balanced_accuracy_score(y_test, y_pred)
+print(balanced_accuracy_score)
 
-# Get the probability
+
+from joblib import dump, load
+
+# Save rf model
+dump(model, 'model_v1.joblib')
+
+
+from sklearn.pipeline import make_pipeline
+# Create pipeline Scaler + model
+pipeline = make_pipeline(X_scaler, model)
+
+t = pd.DataFrame([user,user])
+print(t)
+
+"""# Get the probability
 prob = model.predict_proba(X_test_scaled)
+"""
