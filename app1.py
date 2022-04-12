@@ -66,12 +66,15 @@ def get_teams():
         # Fit the StandardScaler
         X_scaler = scaler.fit(X_df)
 
+        #Scale the input
+        X_scaled = X_scaler.transform(X_df)
+
         # read in your model
         filename = 'finalized_RF_model.sav'
         loaded_model = pickle.load(open(filename, 'rb'))
         
         # pass in the data into the model
-        prob = loaded_model.predict_proba(X_scaler.head(1))
+        prob = loaded_model.predict_proba(X_df)
 
         # result from model is 1
         
