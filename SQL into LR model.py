@@ -144,7 +144,7 @@ from joblib import dump, load
 # Save rf model
 dump(model, 'model_v1.joblib')
 
-
+"""
 from sklearn.pipeline import make_pipeline
 # Create pipeline Scaler + model
 pipeline = make_pipeline(X_scaler, model)
@@ -152,6 +152,12 @@ pipeline = make_pipeline(X_scaler, model)
 t = pd.DataFrame([user,user])
 print(t)
 
-"""# Get the probability
+# Get the probability
 prob = model.predict_proba(X_test_scaled)
+
+# Save pipeline
+
+from pickle import dump as dump_p, load as load_p
+
+dump(pipeline, 'pipeline_v1.joblib')
 """
