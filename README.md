@@ -48,9 +48,15 @@ Based on the below results, we will target our machine learning model to feature
 
 ![corr_matrix.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/corr_matrix.png)
 
+
 For display in the final dashboard, we will develop a Plotly visualization that allows users to see the win rates of each team per year against the amount of three-pointers attempted. The markers are coloured by three-point field goal percentage and the team name is presented upon hovering.
 
 ![threes_scatter.png](https://github.com/donjohn42x/NBA_Analysis/blob/main/Resources/README_images/threes_scatter.png)
+=======
+Additional EDA was conducted to review if the home team had an advantage to win the game. The following diagram displays the difference in average team wins (1=win 0=loss) per year. Note: during the Covid-19 pandemic, the home team advantage was reduced, perhaps due to their being no crows in attendence.
+
+![home_away](https://github.com/donjohn42x/NBA_Analysis/blob/249e014ce5be462a6685daedc3fffafce8d74a7c/Resources/README_images/Home%20vs%20Away.jpg)
+
 
 ## Machine Learning Model Overview
 For the machine learning model selection, our project will be dealing with the following two assumptions:
@@ -62,15 +68,15 @@ We will be looking to implement a Logistic Regression model as we are looking fo
 ### Preprocessing
 The data will be pre-processed to create a feature for identifying whether the team played at home or away, as our EDA suggested there may be a relationship of the home team being more likely to win a game. The other numerical features were selected based on the correlation matrix and stored in the "needed_features" variable.
 
-- (Leaving space for team to add more details)
+The [model](https://github.com/donjohn42x/NBA_Analysis/blob/main/nba_analysis.ipynb) was trained using DataFrames that took the average value of the key features over each respective teams' last ten games and using the "WIN" column as the output variable.
 
 ### Model Evaluation
-- Initially we tried to use a neural network model [link to nn ipynb] to parse the data however we were unsatisified with the results of the accuracy, *NN accuracy numbers* . Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
+- Initially we tried to use a [neural network model](https://github.com/donjohn42x/NBA_Analysis/blob/main/nba_analysis_NN.ipynb) to parse the data however we were unsatisified with the results of the accuracy. Through further investigation we discovered that even the best models out there have a working accuracy of about 70% so we are on the right track given it was our first attempt. 
 - After talking with the instructors for some guidance we decided to go with two simpler models in an attempt to increase the accuracy, that is how we decided to use a Logistic Regresion model as well as a RandomForest model. 
 - Problems we encountered with the Logistic Regression model: 
-    - 
+    - The main issues we ran into with the use of the Logistic Regression model was with choosing the correct variables to use. We had to go through much trial and error to get to the correct variables to use in the model as many of the categories are closesly correlated with each other, thus meaning it was bad for the model. The more things we tried to add the more problems we had so we used our [correlation matrix](https://github.com/donjohn42x/NBA_Analysis/commit/546fa7a8782a962c5a48888a78793c63973be574) to find the correct variables to use in our analysis. 
 - Problems we encountered with the RandomForest model:
-    - 
+    - This is a relatively simple model unfortunetally, it does not take into account previous history. The accuracy of the RandomForest model, although better, is not well trained. We can enrich the model with additional features such as previous season's data as well as additional variables, the opposite approach to the Logistic Regression model. 
  
 ### Features (variables used to make a prediction): 
 - Target (predicted outcome): HOME_TEAM_WINS (Games.csv)
@@ -84,12 +90,15 @@ The data will be pre-processed to create a feature for identifying whether the t
 - from skl
 
 ## Dashboard Design
-This is the webpage wireframe for the presentation of the project:
-
+### This is the webpage wireframe for the dashboard:
 ![dashboard_design.png](https://github.com/donjohn42x/NBA_Analysis/blob/ryan_branch/Resources/README_images/dashboard_design.png)
 
-The primary feature will be to create a "Game Win Predictor" interface that will allow a user to input a home team and away team for the machine learning model to output a winner of the matchup.
+### Tools Used to Create the Final Dashboard
+1. Figma.com - a free web-based application that allows users to create a website design with built-in templates and plug-ins. We used Figma to create the wireframe.
+2. Pxcode.io - a free web-based appliation that allows users to create an HTML file from the figma wireframe.
+3. HTML - The front-end programing language that will be used to create  the webpage
 
-Layered in this design will also have a presentation of the EDA visualizations as well as a description of the machine learning model selected.
-
-A possible future implementation is to create a button that will scrape more recent NBA data for the model as the current database is static.
+### Decription of the Interactive Elements
+- The primary feature will be to create a "Game Win Predictor" interface that will allow a user to input a home team and away team for the machine learning model to output a winner of the matchup.
+- Layered in this design will also have a presentation of the EDA visualizations as well as a description of the machine learning model selected.
+- A possible future implementation is to create a button that will scrape more recent NBA data for the model as the current database is static.
