@@ -26,12 +26,25 @@
   <style>
     img {
     display: block;
-    margin-left: auto;
+    margin-left: 430px;
     margin-right: auto;
     width: 50%;
   }
-  h1, h3, button{
-    margin-left: 200px;
+  h1, h3, p, button{
+    margin-left: 430px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   </style>
 
@@ -40,17 +53,16 @@
       <div class="insights-analytics2-homevsAway layout">
         <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
         <h1 class="insights-analytics2-hero-title1 layout">
-          Insights and Analytics
+          Insights and Analytics (Feature - Home vs. Away)
         </h1>
-        <h3 class="insights-analytics2-subtitle layout">
-          Feature - Home vs. Away
-        </h3>
-        
+        <br>
+        <p>The following diagram displays the difference in average team wins (1=win 0=loss) per year. 
+        <br> Note: during the Covid-19 pandemic, the home team advantage was reduced, perhaps due to their being no crows in attendence.</p>
         <a href="Insights_analytics1.html">
-          <button action=""><a href="{{url_for('analysis')}}">Previous</a> </a></button>
+          <button action=""><a href="{{url_for('analysis')}}">Previous</button>
         </a>
         <a href="Insights_analytics3.html">
-          <button action=""><a href="{{url_for('analysis3')}}">Next</a> </a></button>
+          <button action=""><a href="{{url_for('analysis3')}}">Next</button>
         </a>
         <div class="insights-analytics2-flex1 layout">
           <div class="insights-analytics2-flex1-item">

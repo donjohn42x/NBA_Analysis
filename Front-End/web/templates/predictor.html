@@ -42,10 +42,15 @@
   }
 
   input{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 150px;
     height: 40px;
     border-radius: 10px;
+  }
+  .selection{
+    display: inline-block;
+    align-items: center;
+    margin-left:250px;
   }
 
 </style>
@@ -58,7 +63,9 @@
 
       <h1>Which team will win?</h1>
       <!-- Home team  -->
+      <div class="selection">
       <h2>Home team</h2>
+        
       <select name="home" id="lang">
         <option value="ATL"> Atlanta Hawks</option>
         <option value="BOS"> Boston Celtics</option>
@@ -91,10 +98,10 @@
         <option value="CLE">Cleveland Cavaliers</option>
         <option value="GSW">Golden State Warriors</option>
         
-
-
       </select>
+    </div>
       <!-- Away team stuff -->
+      <div class="selection">
       <h2>Away team</h2>
       <select name="away" id="lang">
         <option value="ATL"> Atlanta Hawks</option>
@@ -131,13 +138,19 @@
 
 
       </select>
+    </div>
+
       <div>
         <input type="submit" value="Submit" />
       </div>
       
+  
     </form>
     <div>
-        <h2>{{ winner }}</h2>
+      <h2>Home: {{ home }} vs Away: {{away}}</h2>
+  </div>
+    <div>
+        <h2>{{ winner }} {{probability}}</h2>
     </div>
   </div>
 </div>
