@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/css/common.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/Insights_Analytics1.css"
+    /> -->
+
+    <style>
+      img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  h1, h3, h4,li,button{
+    margin-left: 350px;
+    margin-bottom: 10px;
+  }
+  li{
+    font-size: 20px;
+  }
+  button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+    </style>
+
+  </head>
+
+  <body style="display: flex; flex-direction: column">
+    <div class="machine-learning insights--analytics1-block">
+      <div class="insights--analytics1-flex" style="margin-left: 50px;">
+        <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
+        <h1 class="insights--analytics1-hero-title2 layout">
+          Insights and Analytics (Heatmap)
+        </h1>
+        <br>
+        <h3>We will target our machine learning model to feature the following stats to the strength of their correlation to WINS:</h3>
+          <li>Field goals attempted (FGA)</li>
+          <li>Field goal percentage (FG_PCT)</li>
+          <li>Three-point percentage (FG3_PCT)</li>
+          <li>Rebounds (REB)</li>
+          <li>Assists (AST)</li>
+          <br>
+        <a href="Insights_analytics2.html">
+          <button action=""><a href="{{url_for('analysis2')}}">Next</a> </a></button>
+        </a>
+        <div class=" ">
+          <div class="heatmap_img">
+            <img src="./static/assets/corr_matrix.png" alt="">
+          </div>
+        </div>
+        <div class="insights--analytics1-flex22 layout">
+          
+          <div class="insights--analytics1-flex2-spacer"></div>
+          <div class="insights--analytics1-flex2-item2">
+            <div class="insights--analytics1-group layout1">
+              <div class="insights--analytics1-box layout"></div>
+              <div
+                style="--src:url(assets/b9eec142374d51738b29fa39bb6aa919.png)"
+                class="layout1"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+  </body>
+</html>

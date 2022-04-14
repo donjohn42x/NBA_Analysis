@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/Insights_analytics2.css"
+    /> -->
+  </head>
+
+  <style>
+    img {
+    display: block;
+    margin-left: 430px;
+    margin-right: auto;
+    width: 50%;
+  }
+  h1, h3, p, button{
+    margin-left: 430px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  </style>
+
+  <body style="display: flex; flex-direction: column">
+    <div class="machine-learning insights-analytics2-block" style="margin-left: 50px;">
+      <div class="insights-analytics2-homevsAway layout">
+        <img src="./static/assets/37a0d17c7b756654825d4cd9f1abfb57.jpg" alt="" style="width: 1000px; height: 150px;">
+        <h1 class="insights-analytics2-hero-title1 layout">
+          Insights and Analytics (Feature - Home vs. Away)
+        </h1>
+        <br>
+        <p>The following diagram displays the difference in average team wins (1=win 0=loss) per year. 
+        <br> Note: during the Covid-19 pandemic, the home team advantage was reduced, perhaps due to their being no crows in attendence.</p>
+        <a href="Insights_analytics1.html">
+          <button action=""><a href="{{url_for('analysis')}}">Previous</button>
+        </a>
+        <a href="Insights_analytics3.html">
+          <button action=""><a href="{{url_for('analysis3')}}">Next</button>
+        </a>
+        <div class="insights-analytics2-flex1 layout">
+          <div class="insights-analytics2-flex1-item">
+            <div class="home_away">
+              <img src="./static/assets/Home vs Away.jpg" alt="" style="width: 800px; height: 1000px;">
+            </div>
+        </div>
+        <div class="insights-analytics2-flex21 layout">
+          <div class="insights-analytics2-flex2-item">
+            <div class="insights-analytics2-group1 layout">
+              <div
+                style="--src:url(assets/17eaa1279cbf8fb23fff1e9899250d41.png)"
+                class="insights-analytics2-image2 layout"
+              ></div>
+            </div>
+          </div>
+        
+          <div class="insights-analytics2-flex2-spacer2"></div>
+          <div class="insights-analytics2-flex2-item">
+            <div class="insights-analytics2-group2 layout">
+              <div
+                style="--src:url(assets/b9eec142374d51738b29fa39bb6aa919.png)"
+                class="insights-analytics2-image2 layout3"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+  </body>
+</html>

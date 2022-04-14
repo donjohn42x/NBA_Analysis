@@ -1,0 +1,278 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+.machine-learning-block {
+  display: flex;
+  flex-direction: column;
+  background-color: white; }
+
+.machine-learning-block.layout {
+  position: relative;
+  overflow: hidden;
+  min-height: 1024px;
+  flex-shrink: 0; }
+
+.machine-learning-flex {
+  display: flex;
+  flex-direction: column; }
+
+.machine-learning-flex.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 32px 36px; }
+  @media (max-width: 1199px) {
+    .machine-learning-flex.layout {
+      margin: 28px 31px; } }
+  @media (max-width: 991px) {
+    .machine-learning-flex.layout {
+      margin: 24px 26px; } }
+  @media (max-width: 767px) {
+    .machine-learning-flex.layout {
+      margin: 20px 22px; } }
+  @media (max-width: 575px) {
+    .machine-learning-flex.layout {
+      margin: 18px 20px; } }
+  @media (max-width: 479px) {
+    .machine-learning-flex.layout {
+      margin: 16px 17px; } }
+  @media (max-width: 383px) {
+    .machine-learning-flex.layout {
+      margin: 15px 16px; } }
+
+.machine-learning-block1 {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center top;
+  object-position: center top; }
+
+.machine-learning-block1.layout {
+  position: relative;
+  width: calc(100% - 10px);
+  margin: 0px 0px 0px 10px; }
+  @media (max-width: 1199px) {
+    .machine-learning-block1.layout {
+      width: calc(100% - 9px);
+      margin: 0px 0px 0px 9px; } }
+  @media (max-width: 991px) {
+    .machine-learning-block1.layout {
+      width: calc(100% - 7px);
+      margin: 0px 0px 0px 7px; } }
+  @media (max-width: 767px) {
+    .machine-learning-block1.layout {
+      width: calc(100% - 6px);
+      margin: 0px 0px 0px 6px; } }
+  @media (max-width: 479px) {
+    .machine-learning-block1.layout {
+      width: calc(100% - 5px);
+      margin: 0px 0px 0px 5px; } }
+
+.machine-learning-hero-title5 {
+  display: flex;
+  justify-content: flex-end;
+  font: 700 48px/1 "Inter", Helvetica, Arial, serif;
+  color: #667080;
+  text-align: right;
+  letter-spacing: -0.96px; }
+  @media (max-width: 1199px) {
+    .machine-learning-hero-title5 {
+      font-size: 43px;
+      text-align: right; } }
+  @media (max-width: 991px) {
+    .machine-learning-hero-title5 {
+      font-size: 37px; } }
+  @media (max-width: 767px) {
+    .machine-learning-hero-title5 {
+      font-size: 32px; } }
+  @media (max-width: 575px) {
+    .machine-learning-hero-title5 {
+      font-size: 30px; } }
+  @media (max-width: 479px) {
+    .machine-learning-hero-title5 {
+      font-size: 27px; } }
+  @media (max-width: 383px) {
+    .machine-learning-hero-title5 {
+      font-size: 25px; } }
+
+.machine-learning-hero-title5.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 31.58%;
+  margin: 60px auto 0px; }
+  @media (max-width: 1199px) {
+    .machine-learning-hero-title5.layout {
+      margin: 51px auto 0px; } }
+  @media (max-width: 991px) {
+    .machine-learning-hero-title5.layout {
+      margin: 42px auto 0px; } }
+  @media (max-width: 767px) {
+    .machine-learning-hero-title5.layout {
+      margin: 34px auto 0px; } }
+  @media (max-width: 575px) {
+    .machine-learning-hero-title5.layout {
+      margin: 30px auto 0px; } }
+  @media (max-width: 479px) {
+    .machine-learning-hero-title5.layout {
+      width: 38.1%;
+      margin: 26px auto 0px; } }
+  @media (max-width: 383px) {
+    .machine-learning-hero-title5.layout {
+      width: 45.07%;
+      margin: 23px auto 0px; } }
+
+.machine-learning-medium-title {
+  display: flex;
+  justify-content: flex-end;
+  font: 700 24px/1.25 "Inter", Helvetica, Arial, serif;
+  color: #667080;
+  text-align: right;
+  letter-spacing: -0.48px; }
+  @media (max-width: 1199px) {
+    .machine-learning-medium-title {
+      font-size: 22px;
+      text-align: right; } }
+  @media (max-width: 991px) {
+    .machine-learning-medium-title {
+      font-size: 20px; } }
+  @media (max-width: 767px) {
+    .machine-learning-medium-title {
+      font-size: 19px; } }
+  @media (max-width: 575px) {
+    .machine-learning-medium-title {
+      font-size: 18px; } }
+  @media (max-width: 479px) {
+    .machine-learning-medium-title {
+      font-size: 17px; } }
+  @media (max-width: 383px) {
+    .machine-learning-medium-title {
+      font-size: 16px; } }
+
+.machine-learning-medium-title.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 45.61%;
+  margin: 19px auto 0px; }
+  @media (max-width: 1199px) {
+    .machine-learning-medium-title.layout {
+      margin: 17px auto 0px; } }
+  @media (max-width: 991px) {
+    .machine-learning-medium-title.layout {
+      margin: 14px auto 0px; } }
+  @media (max-width: 767px) {
+    .machine-learning-medium-title.layout {
+      width: 52.79%;
+      margin: 12px auto 0px; } }
+  @media (max-width: 575px) {
+    .machine-learning-medium-title.layout {
+      width: 59.85%;
+      margin: 11px auto 0px; } }
+  @media (max-width: 479px) {
+    .machine-learning-medium-title.layout {
+      width: 66.53%;
+      margin: 10px auto 0px; } }
+  @media (max-width: 383px) {
+    .machine-learning-medium-title.layout {
+      width: 72.61%;
+      margin: 9px auto 0px; } }
+
+@media (max-width: 1199px) {
+  .machine-learning-highlights1-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 991px) {
+  .machine-learning-highlights1-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 767px) {
+  .machine-learning-highlights1-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+@media (max-width: 479px) {
+  .machine-learning-highlights1-box {
+    align-items: flex-start;
+    justify-content: flex-start; } }
+
+.machine-learning-highlights1-box.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 26.61%;
+  margin: 45px auto 0px; }
+  @media (max-width: 1199px) {
+    .machine-learning-highlights1-box.layout {
+      margin: 39px auto 0px; } }
+  @media (max-width: 991px) {
+    .machine-learning-highlights1-box.layout {
+      margin: 32px auto 0px; } }
+  @media (max-width: 767px) {
+    .machine-learning-highlights1-box.layout {
+      margin: 26px auto 0px; } }
+  @media (max-width: 575px) {
+    .machine-learning-highlights1-box.layout {
+      margin: 23px auto 0px; } }
+  @media (max-width: 479px) {
+    .machine-learning-highlights1-box.layout {
+      margin: 20px auto 0px; } }
+  @media (max-width: 383px) {
+    .machine-learning-highlights1-box.layout {
+      margin: 18px auto 0px; } }
+
+.machine-learning-highlights1 {
+  overflow: visible;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0px;
+  font: 16px/1.37 "Inter", Helvetica, Arial, serif;
+  color: #667080;
+  letter-spacing: -0.32px;
+  white-space: pre-wrap; }
+  @media (max-width: 1199px) {
+    .machine-learning-highlights1 {
+      font-size: 15px;
+      text-align: left; } }
+  @media (max-width: 991px) {
+    .machine-learning-highlights1 {
+      font-size: 14px; } }
+  @media (max-width: 767px) {
+    .machine-learning-highlights1 {
+      font-size: 13px; } }
+  @media (max-width: 479px) {
+    .machine-learning-highlights1 {
+      font-size: 12px; } }
+
+.machine-learning-image {
+  background: var(--src) center center/contain no-repeat; }
+
+.machine-learning-image.layout {
+  position: relative;
+  height: 191px;
+  width: 13.38%;
+  margin: 37px 9.36% 145px 77.27%; }
+  @media (max-width: 1199px) {
+    .machine-learning-image.layout {
+      margin: 32px 9.36% 117px 77.27%; } }
+  @media (max-width: 991px) {
+    .machine-learning-image.layout {
+      margin: 27px 9.36% 86px 77.27%; } }
+  @media (max-width: 767px) {
+    .machine-learning-image.layout {
+      margin: 22px 9.36% 60px 77.27%; } }
+  @media (max-width: 575px) {
+    .machine-learning-image.layout {
+      margin: 20px 9.36% 47px 77.27%; } }
+  @media (max-width: 479px) {
+    .machine-learning-image.layout {
+      margin: 18px 9.36% 33px 77.27%; } }
+  @media (max-width: 383px) {
+    .machine-learning-image.layout {
+      margin: 16px 9.36% 25px 77.27%; } }
